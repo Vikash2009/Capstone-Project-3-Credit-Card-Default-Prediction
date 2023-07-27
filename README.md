@@ -1,12 +1,21 @@
+<h1 align="center"> Credit Card Default Prediction</h1>
+<h5 align="center"> AlmaBetter Verfied Project - <a href="https://www.almabetter.com/"> AlmaBetter School </a> </h5>
+
+![--](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
 
 # Credit Card Default Prediction
 
 This project presents and discusses data-driven predictive models for predicting the defaulters among the credit card users. Data used include details like limit balance, age, sex, amount of bill statement, repayment status and amount of previous payment. The paper discusses which variables are the strongest predictors of default, and to make predictions on which customers are likely to default
 
+![--](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
 
 ## Problem Statement 
 
 In this project my aim was to predict the case of customers default payments in Taiwan. From the perspective of risk management, the result of predictive accuracy of the estimated probability of default will be more valuable than the binary result of classification - credible or not credible clients. We can use the K-S chart to evaluate which customers will default on their credit card payments.
+
+![--](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 ## Dataset
 [Dataset](https://docs.google.com/spreadsheets/d/1J0Ja4eSrXtkZtjLt2evDqiJJnc1k2T-Z/edit?usp=sharing&ouid=108383443908656099857&rtpof=true&sd=true)
@@ -27,6 +36,8 @@ In this project my aim was to predict the case of customers default payments in 
 • X12-X17: Amount of bill statement (NT dollar). X12 = amount of bill statement in September, 2005; X13 = amount of bill statement in August, 2005; . . .; X17 = amount of bill statement in April, 2005.
 
 • X18-X23: Amount of previous payment (NT dollar). X18 = amount paid in September, 2005; X19 = amount paid in August, 2005; . . .;X23 = amount paid in April, 2005. 
+
+![--](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 ## Algorithm Used
 1.	Logistic Regression:
@@ -55,14 +66,19 @@ When building a decision tree, a challenge is to decide how to split a current l
 
 XGBoost is one of the fastest implementations of gradient boosting. trees. It does this by tackling one of the major inefficiencies of gradient boosted trees: considering the potential loss for all possible splits to create a new branch (especially if you consider the case where there are thousands of features, and therefore thousands of possible splits). XGBoost tackles this inefficiency by looking at the distribution of features across all data points in a leaf and using this information to reduce the search space of possible feature splits.
 
+![--](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
 ### SMOTE Oversampling -
 In the initial model fitting, we start by using all models’ default parameters. To compensate for the rare classes in the imbalance dataset, we use SMOTE(Synthetic Minority Over-Sampling Technique) method to over sample the minority class and ensure the sampling is not biased. What this technique does under the hood is simply duplicating examples from the minority class in the training dataset prior to fitting a mode. After SMOTE sampling, the dataset has equal size of 0s and 1s. 
 
 In order to verify if SMOTE improves models’ performance, all 3 models are trained with SMOTE and without SMOTE. Below table shows the ROC_ AUC scores on training data improved significantly with all models after over sampling with SMOTE. This proves SMOTE is an effective method in sampling imbalanced dataset.
 
+![--](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 ### Comparision within the 3 models . 
 Logistic Regression has the highest recall but also the lowest precision. Random Forest outperforms Logistic Regression and XG Boost if measured on their F1 scores, which is the balance between precision and recall. XG Boost has a decent performance but it takes the most time to tune the model.
+
+![--](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 ## Conclusion
 Based on the exploratory data analysis, we discover that human characteristics are not the most important predictors of default, the payment status of the most 2 months and credit limit 
@@ -71,10 +87,15 @@ From the modeling, we are able to classify default risk with accessible customer
 
 If the balance of recall and precision is the most important metric, then Random Forest is the ideal model. 
 
+![--](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
 ## Reference
 1. Machine Learning Mastery 
 2. Geeks for Geeks 
 3. Analytics Vidhya
+
+![--](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
 ## 🚀 About Me
 
 
