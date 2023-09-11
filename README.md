@@ -93,6 +93,9 @@ If the balance of recall and precision is the most important metric, then Random
 1. Machine Learning Mastery 
 2. Geeks for Geeks 
 3. Analytics Vidhya
+4. Statquest on youtube
+5. CampusX on youtube
+6. Udemy
 
 ![--](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
